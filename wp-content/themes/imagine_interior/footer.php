@@ -10,23 +10,31 @@
  */
 
 ?>
+<?php $img_path = get_template_directory_uri('/'); ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'imagine_interior' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'imagine_interior' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'imagine_interior' ), 'imagine_interior', '<a href="http://gtechsolution.com.au">Andy</a>' );
-				?>
-		</div><!-- .site-info -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                    <div class="footer-wrapper">
+                        <a class="ii-footer-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" >
+	                        <?php echo file_get_contents($img_path."/images/footer-logo.svg"); ?>
+                        </a>
+                        <div class="copyright">Copyright &copy; Imagine Interior. All Rights Reserved.</div>
+                        <ul class="social-media">
+                            <li><a href="#" class="social-media__instagram" target="_blank"><?php echo file_get_contents($img_path."/images/instagram-icon.svg"); ?></a></li>
+                            <li><a href="#" class="social-media__linkedin" target="_blank"><?php echo file_get_contents($img_path."/images/linkedin-icon.svg"); ?></a></li>
+                            <li><a href="#" class="social-media__fb" target="_blank"><?php echo file_get_contents($img_path."/images/fb-icon.svg"); ?></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                    <div class="dnd"><span>Website by</span> <a href="https://gtechsoludtion.com.au" target="_blank">D&D Creative</a></div>
+                </div>
+            </div>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

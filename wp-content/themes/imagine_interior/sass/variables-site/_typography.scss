@@ -1,4 +1,32 @@
-$font__main: sans-serif;
+@font-face {
+  font-family: 'Futura PT';
+  font-weight: 300;
+  src: url("../fonts/futura/FuturaPTLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  font-weight: 500;
+  src: url("../fonts/futura/FuturaPTMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  font-weight: 400;
+  src: url("../fonts/futura/FuturaPTBook.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url("../fonts/futura/FuturaPTDemi.otf") format("opentype");
+}
+
+
+
+$font__main: 'Futura PT Book', sans-serif;
+$font__title: 'Futura PT Demi', sans-serif;
+$font__link: 'Futura PT', sans-serif;
+
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

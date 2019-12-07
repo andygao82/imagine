@@ -1,6 +1,6 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
+	font-size: ($sizeValue * 10) * 1px;
 	font-size: $sizeValue * 1rem;
 }
 
@@ -26,4 +26,14 @@
 // Column width with margin
 @mixin column-width($numberColumns: 3) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+//  flex setting
+@mixin flex($justifyContent: space-between, $alignItems: center, $flexWrap: wrap, $flexDirection: row){
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+	flex-wrap: $flexWrap;
+	flex-direction: $flexDirection;
 }

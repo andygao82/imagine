@@ -11,7 +11,7 @@ get_header();
                 <div class="wrapper">
                     <h1 class="page-title section-title"><span><?= get_field('section_1_title') ?></span></h1>
                     <div class="section-content"><?= get_field('section_1_content')?></div>
-                    <a href="#" class=link-btn"><span>Learn More</span></a>
+                    <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     <ul class="social-media">
                         <li><a href="#" class="social-media__instagram" target="_blank"><?php echo file_get_contents($img_path."/images/instagram-icon.svg"); ?></a></li>
                         <li><a href="#" class="social-media__linkedin" target="_blank"><?php echo file_get_contents($img_path."/images/linkedin-icon.svg"); ?></a></li>
@@ -21,7 +21,6 @@ get_header();
                 <div class="home-slider">
                     <div class="home-slider-wrapper">
                         <ul class="slides" id="home-banner-slider">
-                            <li><img src="<?= get_template_directory_uri('/')?>/images/slide_img_1.png" alt="Imagine Interior"></li>
                             <li><img src="<?= get_template_directory_uri('/')?>/images/slide_img_1.png" alt="Imagine Interior"></li>
                         </ul>
                     </div>

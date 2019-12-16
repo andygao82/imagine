@@ -2,6 +2,10 @@
 html{
     font-size: 10px;
 }
+body{
+    color: $body__content-color;
+    font-size: 1.6rem;
+}
 .page-template-page-coming{
     width: 100vw;
     height: 100vh;
@@ -56,7 +60,21 @@ html{
 .container{
     max-width: 1470px;
 }
+a.link-btn{
+    @include learnMoreButton();
+}
+section{
+    margin-bottom: 190px;
+    h2{
+        font-size: 4rem;
+        line-height: 2;
+        font-family: 'Futura PT Demi';
+        font-weight: 500;
+    }
+    h3{
 
+    }
+}
 /////////////////////   HEADER & FOOTER   /////////////////////////
 header{
     padding-top: 100px;
@@ -118,15 +136,13 @@ a.ii-logo{
 }
 
 .social-media{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include unstyled();
     li{
         display: inline-block;
         a{
             display: block;
             width: 28px;
-            margin-left: 35px;
+            margin-right: 35px;
             &.social-media__fb{
                 width: 14px;
             }
@@ -152,4 +168,49 @@ a.ii-logo{
 /////////////////////   HEADER & FOOTER   /////////////////////////
 
 /////////////////////   HOME   /////////////////////////
+
+h1.page-title{
+    font-family: 'Futura PT';
+    font-size: 5rem;
+    font-weight: 300;
+}
+.banner{
+    position: relative;
+    .wrapper{
+        position: relative;
+        margin-top: 200px;
+        margin-bottom: 24px;
+        z-index: 2;
+    }
+    .home-slider{
+        position: absolute;
+        top: 0;
+        left: 350px;
+        z-index: 1;
+    }
+    h1.page-title{
+        max-width: 550px;
+        margin-bottom: 1em;
+        letter-spacing: 4.5px;
+    }
+    .section-content{
+        margin-bottom: 135px;
+        ul{
+            @include unstyled();
+            li{
+                margin-bottom: .5em;
+                &:before{
+                    @include goldenBar();
+                }
+            }
+        }
+    }
+    .social-media{
+        margin-top: 155px;
+    }
+    #home-banner-slider{
+        @include unstyled();
+    }
+}
+
 

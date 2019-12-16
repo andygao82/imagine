@@ -37,3 +37,43 @@
 	flex-wrap: $flexWrap;
 	flex-direction: $flexDirection;
 }
+
+//  initialize ul
+@mixin unstyled(){
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+//  before after inline block
+@mixin baIBlock($display: block){
+	content: '';
+	display: $display;
+}
+
+//  golden bar at beginning
+@mixin goldenBar($width: 2px, $height: 16px, $bgColor: #C79F62){
+	@include baIBlock(inline-block);
+	width: $width;
+	height: $height;
+	background-color: $bgColor;
+	margin-right: 10px;
+}
+
+//  learn more button with arrow
+@mixin learnMoreButton(){
+	display: inline-block;
+	color: #373B3C;
+	font-size: 1.6rem;
+	span{
+		display: inline-block;
+		padding-bottom: .6em;
+		margin-right: 17px;
+	}
+	&:after{
+		@include baIBlock();
+		width: 120px;
+		height: 4px;
+		background-color: #C79F62;
+	}
+}

@@ -71,9 +71,14 @@
 		margin-right: 17px;
 	}
 	&:after{
-		@include baIBlock();
-		width: 120px;
-		height: 4px;
-		background-color: #C79F62;
+		@include goldenBar(120px, 4px);
+		display: block;
 	}
+}
+
+//  title with + sign
+@mixin titleWithPlus(){
+	content: '+';
+	display: inline-block;
+	margin-left: 5px;
 }

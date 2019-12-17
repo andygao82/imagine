@@ -6,6 +6,9 @@ body{
     color: $body__content-color;
     font-size: 1.6rem;
 }
+.page, .post{
+    margin: 0;
+}
 .page-template-page-coming{
     width: 100vw;
     height: 100vh;
@@ -70,9 +73,17 @@ section{
         line-height: 2;
         font-family: 'Futura PT Demi';
         font-weight: 500;
+        letter-spacing: 3.6px;
+        &:after{
+            @include titleWithPlus();
+        }
     }
     h3{
-
+        font-size: 3.5rem;
+        line-height: 1.4;
+        font-family: 'Futura PT';
+        font-weight: 300;
+        letter-spacing: 3.15px;
     }
 }
 /////////////////////   HEADER & FOOTER   /////////////////////////
@@ -174,6 +185,7 @@ h1.page-title{
     font-size: 5rem;
     font-weight: 300;
 }
+
 .banner{
     position: relative;
     .wrapper{
@@ -213,4 +225,205 @@ h1.page-title{
     }
 }
 
+.about{
+    .wrapper{
+        @include flex(space-between, flex-start);
+    }
+    &-col__left{
+        width: 30%;
+        h3{
+            margin: .5em 0 1.5em;
+        }
+    }
+    &-col__mid{
+        width: 33%;
+    }
+    &-col__right{
+        width: 30%;
+        h2{
+            margin-top: 1.5em;
+        }
+        a.link-btn{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+    }
+}
 
+.featured{
+    background-color: #ffffff;
+    h2{
+        transform: translateY(-50%);
+    }
+    @for $i from 1 through 3{
+        .featured-col:nth-child(#{$i}){
+            transform: translateY(30px);
+            .wrapper{
+                position: relative;
+                color: #FFFFFF;
+                padding-bottom: 100%;
+                background-image: url("../images/feature_image_#{$i}.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                .inner-wrapper{
+                    position: absolute;
+                    padding: 40px 50px;
+                }
+                h3{
+                    font-family: 'Futura PT Demi';
+                    letter-spacing: 0;
+                    display: block;
+                    padding-bottom: .3em;
+                    margin-bottom: .7em;
+                    border-bottom: 4px solid #ffffff;
+                }
+                .featured-content{
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service{
+    .container{
+        position: relative;
+    }
+    a.link-btn{
+        margin-top: 60px;
+    }
+    h2{
+        margin-bottom: 4em;
+    }
+    h3{
+        position: relative;
+        display: block;
+        span{
+            padding-bottom: .3em;
+            display: block;
+        }
+        margin-bottom: 1.5em;
+        &:after{
+            @include goldenBar(120px, 4px);
+            display: block;
+        }
+    }
+    .service-1, .service-2, .service-3{
+        .wrapper{
+            color: $color__grey;
+            .section-content{
+                position: relative;
+                width: 100%;
+                max-width: 380px;
+                font-size: 1.8rem;
+                line-height: 1.4;
+                font-family: 'Futura PT';
+                font-weight: 300;
+                margin-left: 60px;
+                letter-spacing: 1.62px;
+                z-index: 1;
+            }
+        }
+    }
+    &-1{
+        margin-bottom: 160px;
+        .wrapper{
+            padding-left: 120px;
+        }
+        .service-images{
+            float: right;
+            transform: translateY(-60px);
+        }
+    }
+    &-2{
+        flex-direction: row-reverse;
+        margin-bottom: 160px;
+        .wrapper{
+            padding-left: 60px;
+            transform: translateY(50%);
+
+        }
+        .service-image__left{
+            vertical-align: bottom;
+        }
+    }
+    &-3{
+        .wrapper{
+            padding-left: 60px;
+        }
+        .bars{
+            transform: translate(-30px, -60px);
+        }
+    }
+    &-images{
+        font-size: 0;
+        //  @include flex(space-between, flex-start, nowrap);
+        img{
+            display: block
+        }
+        .service-image{
+            &__right{
+                margin-right: 30px;
+                text-align: right;
+                img:first-child{
+                    margin-left: auto;
+                }
+            }
+            &__left{
+                margin-right: 0;
+            }
+        }
+    }
+    &-image{
+        &__left{
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 30px;
+        }
+        &__right{
+            display: inline-block;
+            img:first-child{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+#side-slogan{
+    position: absolute;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+    -moz-transform: rotate(-90deg) translate(-50%, 50%);
+    -ms-transform: rotate(-90deg) translate(-50%, 50%);
+    -o-transform: rotate(-90deg) translate(-50%, 50%);
+    transform: rotate(-90deg) translate(-50%, 50%);
+    left: 15px;
+    top: 525px;
+    &:after{
+        @include goldenBar(100px, 2px);
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+}
+.bars{
+    position: absolute;
+    display: block;
+    transform: translate(-50%, -60px);
+    .bar{
+        display: inline-block;
+        width: 60px;
+        height: 300px;
+        margin-right: 100px;
+        background-color: #EBECEE;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

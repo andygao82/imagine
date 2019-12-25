@@ -17,7 +17,7 @@
 	<footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="footer-wrapper">
                         <a class="ii-footer-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" >
 	                        <?php echo file_get_contents($img_path."/images/footer-logo.svg"); ?>
@@ -30,7 +30,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="dnd"><span>Website by</span> <a href="https://gtechsoludtion.com.au" target="_blank">D&D Creative</a></div>
                 </div>
             </div>

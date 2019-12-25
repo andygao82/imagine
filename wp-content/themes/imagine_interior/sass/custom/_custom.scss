@@ -3,6 +3,7 @@ html{
     font-size: 10px;
 }
 body{
+    background-color: $color__background-body;
     color: $body__content-color;
     font-size: 1.6rem;
 }
@@ -66,6 +67,10 @@ body{
 a.link-btn{
     @include learnMoreButton();
 }
+h1.page-title{
+    margin-bottom: 1em;
+    letter-spacing: 4.5px;
+}
 section{
     margin-bottom: 190px;
     h2{
@@ -119,6 +124,8 @@ a.ii-logo{
                 font-family: $font__link;
                 font-weight: 500;
                 color: $color__nav-link;
+                font-size: 2rem;
+                letter-spacing: .6px;
             }
         }
     }
@@ -133,16 +140,23 @@ a.ii-logo{
         padding-left: 50px;
         border-left: 2px solid $color__gold;
         line-height: 1;
+        font-size: 2rem;
+        letter-spacing: .6px;
     }
 }
 .footer-wrapper{
     width: 100%;
     color: $color__grey;
+    font-size: 2rem;
+    font-weight: 500;
     font-family: $font__link;
     @include flex();
     .ii-footer-logo{
         width: 100%;
         max-width: 140px;
+        .st0{
+            fill: $color__nav-link;
+        }
     }
 }
 
@@ -157,6 +171,10 @@ a.ii-logo{
             &.social-media__fb{
                 width: 14px;
             }
+            .st0{
+                fill: $color__nav-link;
+            }
+
         }
     }
 }
@@ -165,6 +183,7 @@ a.ii-logo{
     width: 100%;
     height: 100%;
     font-family: $font__link;
+    font-size: 2rem;
     @include flex(flex-end, center);
     span{
         font-weight: 500;
@@ -186,6 +205,15 @@ h1.page-title{
     font-weight: 300;
 }
 
+.section-description{
+    p{
+        font-family: 'Futura PT';
+        font-weight: 300;
+        letter-spacing: 1.62px;
+        font-size: 1.8rem;
+    }
+}
+
 .banner{
     position: relative;
     .wrapper{
@@ -202,8 +230,6 @@ h1.page-title{
     }
     h1.page-title{
         max-width: 550px;
-        margin-bottom: 1em;
-        letter-spacing: 4.5px;
     }
     .section-content{
         margin-bottom: 135px;
@@ -211,6 +237,7 @@ h1.page-title{
             @include unstyled();
             li{
                 margin-bottom: .5em;
+                font-size: 2rem;
                 &:before{
                     @include goldenBar();
                 }
@@ -255,6 +282,11 @@ h1.page-title{
     h2{
         transform: translateY(-50%);
     }
+    &-content{
+        font-family: 'Futura PT';
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
     @for $i from 1 through 3{
         .featured-col:nth-child(#{$i}){
             transform: translateY(30px);
@@ -273,6 +305,7 @@ h1.page-title{
                 h3{
                     font-family: 'Futura PT Demi';
                     letter-spacing: 0;
+                    font-size: 4rem;
                     display: block;
                     padding-bottom: .3em;
                     margin-bottom: .7em;
@@ -424,6 +457,266 @@ h1.page-title{
         background-color: #EBECEE;
         &:last-child{
             margin-right: 0;
+        }
+    }
+}
+
+.page-template-page-about, .page-template-page-service {
+    header{
+        margin-bottom: 80px;
+    }
+    h1.page-title{
+        width: 100%;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 5rem;
+        letter-spacing: 4.5px;
+        line-height: 1.4;
+        font-family: 'Futura PT';
+        font-weight: 300;
+        margin-bottom: 1.5em;
+        text-transform: uppercase;
+        &::after{
+            display: none;
+        }
+    }
+    .section-description{
+        font-size: 1.8rem;
+        line-height: 1.5;
+        letter-spacing: 1.62px;
+        p{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.about-top{
+    position: relative;
+    .section-description{
+        width: 100%;
+        max-width: 875px;
+        padding: 75px;
+    }
+    &__image{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.about-mid{
+    padding-bottom: 180px;
+    margin-bottom: 0;
+    background: rgb(245,246,247);
+    background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 56%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 100%);
+    #side-slogan{
+        top: 60px;
+        &::after{
+            width: 150px;
+            margin-left: 50px;
+        }
+    }
+    .wrapper{
+        padding-left: 75px;
+        &::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+    &__image{
+        float: left;
+    }
+    &__content{
+        float: right;
+        width: 100%;
+        max-width: 565px;
+        h2{
+            transform: translateX(-17%);
+            margin-top: 20%;
+        }
+        .section-description{
+            padding-left: 40px;
+            p{
+                letter-spacing: 0;
+            }
+            ul{
+                font-size: 1.6rem;
+                font-family: 'Futura PT';
+                font-weight: 300;
+                padding: 0;
+                margin: 0 0 60px 0;
+                list-style: none;
+                li{
+                    margin-bottom: 1.5em;
+                    &::before{
+                        content: '+';
+                        display: inline-block;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-bottom{
+    background: rgb(245,246,247);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(245,246,247,1) 16%, rgba(245,246,247,1) 100%);
+    margin-bottom: 0;
+    &__image{
+        float: right;
+    }
+    &__content{
+        float: left;
+        h2{
+            text-transform: uppercase;
+        }
+        ul{
+            padding-left: 75px;
+            margin: 0;
+            list-style: none;
+            li{
+                margin-bottom: 1.5em;
+                letter-spacing: 0;
+                font-family: 'Futura PT';
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.service-top{
+    position: relative;
+    h1.page-title{
+      text-align: right;
+    }
+    .section-description{
+        width: 100%;
+        max-width: 875px;
+        padding: 75px 75px 0 75px;
+        float: right;
+        margin-top: 75px;
+    }
+    &__image{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.service-mid{
+    padding-bottom: 180px;
+    margin-bottom: 0;
+    background: rgb(245,246,247);
+    background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 57%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    #side-slogan{
+        top: 60px;
+        &::after{
+            width: 150px;
+            margin-left: 50px;
+        }
+    }
+    .wrapper{
+        padding-left: 125px;
+        &::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+    &__image{
+        float: left;
+    }
+    &__content{
+        float: right;
+        width: 100%;
+        max-width: 565px;
+        h2{
+            span{
+                display: block;
+                transform: translateX(-15%);
+            }
+            margin-top: 30%;
+        }
+        .section-description{
+            padding-left: 40px;
+            p{
+                letter-spacing: 0;
+            }
+            ul{
+                font-family: 'Futura PT';
+                font-weight: 300;
+                padding: 0;
+                margin: 80px 0 60px 0;
+                list-style: none;
+                li{
+                    margin-bottom: 1.5em;
+                    &::before{
+                        content: '+';
+                        display: inline-block;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-bottom{
+    background: rgb(245,246,247);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(245,246,247,1) 22%, rgba(245,246,247,1) 100%);
+    margin-bottom: 400px;
+    h2{
+        margin-top: 20%;
+    }
+    &__image{
+        float: right;
+    }
+    &__content{
+        float: left;
+        width: 606px;
+        .section-description{
+            padding-left: 125px;
+            ul{
+                padding: 0;
+                margin: 80px 0 0;
+                transform: translateX(-12%);
+                list-style: none;
+                li{
+                    margin-bottom: 1.5em;
+                    letter-spacing: 0;
+                    font-family: 'Futura PT';
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+.service-under{
+    background-color: #ffffff;
+    margin-bottom: 0;
+    .wrapper{
+        padding-left: 125px;
+        &::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+    &__image{
+        float: left;
+        transform: translateY(-20%);
+    }
+    &__content{
+        float: right;
+        width: 525px;
+        padding-top: 80px;
+        h2{
+            transform: translateX(-23%);
         }
     }
 }

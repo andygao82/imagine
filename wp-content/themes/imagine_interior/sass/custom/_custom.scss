@@ -64,6 +64,7 @@ body{
 .container{
     max-width: 1470px;
 }
+
 a.link-btn{
     @include learnMoreButton();
     &-res{

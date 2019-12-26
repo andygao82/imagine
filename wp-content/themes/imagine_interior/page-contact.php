@@ -37,6 +37,7 @@ get_header();
         <div class="row">
             <div class="col">
                 <div class="wrapper">
+                    <span id="side-slogan">Imagine Interior / Contact Us</span>
                     <h2>GET YOUR OBLIGATION-FREE<br/>QUOTATION HERE</h2>
                     <div class="inner-wrapper">
                         <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]')?>

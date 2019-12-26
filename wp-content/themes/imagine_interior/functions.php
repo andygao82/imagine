@@ -168,7 +168,7 @@ function style_css(){
 add_action( 'wp_enqueue_scripts', 'style_css' );
 
 
-function slick_scripts() {
-	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), true );
+function flexslider_scripts() {
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/flexslider.min.js', array(), true );
 }
-add_action( 'wp_enqueue_scripts', 'slick_scripts' );
+add_action( 'wp_enqueue_scripts', 'flexslider_scripts' );

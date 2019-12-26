@@ -82,3 +82,9 @@
 	display: inline-block;
 	margin-left: 5px;
 }
+
+//	transition time
+@mixin transition($time: .25s){
+	-webkit-transition: all .25s ease-in-out; /* Safari prior 6.1 */
+	transition: all .25s ease-in-out;
+}

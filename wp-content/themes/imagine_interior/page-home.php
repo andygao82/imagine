@@ -19,17 +19,66 @@ get_header();
                     </ul>
                 </div>
                 <div class="home-slider">
-                    <div class="home-slider-wrapper">
-                        <ul class="slides" id="home-banner-slider">
+                    <div class="home-slider-wrapper" id="home-banner-slider">
+                        <ul class="slider">
+                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
                             <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
                         </ul>
                     </div>
+                    <div class="home-slider-nav">
+                            <span class="home-slider-nav-prev">
+                                <img src="<?= $img_path?>/images/arrow-left.svg" alt="Imagine Interior">
+                            </span>
+                        <span class="home-slider-nav-next">
+                            <img src="<?= $img_path?>/images/arrow-right.svg" alt="Imagine Interior">
+                        </span>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
+<script>
+    jQuery(window).load(function() {
+        calcUlWidth();
+    });
+
+    jQuery(window).resize(function() {
+        calcUlWidth();
+    });
+
+    function calcUlWidth(){
+        var slider = jQuery('.slider');
+        var sliderLi = jQuery('.slider li');
+        var numberOfLi = sliderLi.length;
+        var liWidth = sliderLi.width() + 50;
+        var ulWidth = liWidth * numberOfLi;
+        var ulWidthMove = liWidth * (numberOfLi - 1);
+
+        slider.width(ulWidth);
+        console.log(ulWidthMove);
+
+        jQuery('.home-slider-nav-next').on('click', function () {
+            var mLeft = Math.abs(parseInt(slider.css('marginLeft'), 10));
+            console.log(mLeft);
+            if(mLeft >= ulWidthMove ){
+            }else{
+                jQuery('.slider').filter(':not(:animated)').animate({ marginLeft : '-='+liWidth});
+            }
+        });
+
+        jQuery('.home-slider-nav-prev').on('click', function () {
+            var mLeft = parseInt(slider.css('marginLeft'), 10);
+            console.log(mLeft);
+            if(mLeft == 0 ){
+            }else{
+                jQuery('.slider').filter(':not(:animated)').animate({ marginLeft : '+='+liWidth});
+            }
+        });
+    }
+</script>
 <section class="about">
     <div class="container">
         <div class="row">

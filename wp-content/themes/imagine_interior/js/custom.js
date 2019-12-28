@@ -16,6 +16,20 @@ jQuery(document).ready(function ($) {
         $('.featured-col').each(function(){
             $(this).addClass('normal');
         })
+    });
 
+    inView('.service-1').on('enter', function(){
+        $('.service-1').find('.bar').addClass('normal');
+        $('.service-1').find('img').addClass('normal');
+    });
+
+    inView('.service-2').on('enter', function(){
+        $('.service-2').find('.bar').addClass('normal');
+        $('.service-2').find('img').addClass('normal');
+    });
+
+    inView('.service-3').on('enter', function(){
+        $('.service-3').find('.bar').addClass('normal');
+        $('.service-3').find('img').addClass('normal');
     });
 });

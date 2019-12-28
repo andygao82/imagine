@@ -634,7 +634,14 @@ h1.page-title{
         font-size: 0;
         //  @include flex(space-between, flex-start, nowrap);
         img{
-            display: block
+            display: block;
+            transform: translateY(200px);
+            opacity: 0;
+            @include transition(1.5s);
+            &.normal{
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .service-image{
             &__right{
@@ -691,11 +698,15 @@ h1.page-title{
     .bar{
         display: inline-block;
         width: 60px;
-        height: 300px;
+        height: 0;
         margin-right: 100px;
         background-color: #EBECEE;
         &:last-child{
             margin-right: 0;
+        }
+        @include transition(1.5s);
+        &.normal{
+            height: 300px;
         }
     }
 }

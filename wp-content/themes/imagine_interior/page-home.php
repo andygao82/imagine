@@ -181,7 +181,7 @@ get_header();
             </div>
         </div>
         <div class="row service-2">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="wrapper">
                     <span class="bars">
                         <span class="bar"></span>
@@ -197,7 +197,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-8">
                 <div class="service-images">
                     <div class="service-image__left">
                         <img src="<?= $img_path?>/images/service_4.png" alt="Imagine Interior">

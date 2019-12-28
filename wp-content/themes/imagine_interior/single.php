@@ -27,18 +27,24 @@ get_header();
                             <strong>Address:</strong>
                             <span><?php echo get_field('project_address') ?></span>
                         </div>
+                        <?php if(get_field('bedroom')){?>
                         <div class="project-detail-bedrooms">
                             <strong>Bedrooms:</strong>
                             <span><?php echo get_field('bedroom') ?></span>
                         </div>
+                        <?php }?>
+                        <?php if(get_field('bathroom')){?>
                         <div class="project-detail-bathroom">
                             <strong>Bathroom:</strong>
                             <span><?php echo get_field('bathroom') ?></span>
                         </div>
+                        <?php }?>
+                        <?php if(get_field('price_from')){?>
                         <div class="project-detail-price">
                             <strong>Price From:</strong>
-                            <span><?php echo get_field('price_from') ?></span>
+                            <span>$<?php echo get_field('price_from') ?></span>
                         </div>
+                        <?php }?>
                     </div>
                     <div class="project-description">
 	                    <?php echo get_field('project_description') ?>

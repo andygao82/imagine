@@ -35,7 +35,7 @@ get_header();
     </div>
 </section>
 
-<section class="project-listing">
+<section class="project-listing" id="project-listing">
     <div class="container">
         <div class="row">
         <?php
@@ -53,53 +53,16 @@ get_header();
                         <div class="col-6 col-sm-4 col-md-3 col-project-item">
                             <div class="wrapper" style="background-image: url('<?= $projectBg ?>')">
                                 <a class="inner-wrapper" href="<?php echo get_permalink()?>">
-                                    <h2><?php echo get_the_category()[0]->name; ?></h2>
+                                    <h3><?php echo get_the_category()[0]->name; ?></h3>
                                     <div class="project-brief">
 		                                <?php echo substr(get_field('project_description'), 0, 60)?>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-project-item">
-                            <div class="wrapper">
-                                <div class="inner-wrapper">
-                                    <h2><?php echo get_the_category()[0]->name; ?></h2>
-                                    <div class="project-brief">
-						                <?php echo substr(get_field('project_description'), 0, 60)?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-project-item">
-                            <div class="wrapper">
-                                <div class="inner-wrapper">
-                                    <h2><?php echo get_the_category()[0]->name; ?></h2>
-                                    <div class="project-brief">
-						                <?php echo substr(get_field('project_description'), 0, 60)?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-project-item">
-                            <div class="wrapper">
-                                <div class="inner-wrapper">
-                                    <h2><?php echo get_the_category()[0]->name; ?></h2>
-                                    <div class="project-brief">
-						                <?php echo substr(get_field('project_description'), 0, 60)?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-project-item">
-                            <div class="wrapper">
-                                <div class="inner-wrapper">
-                                    <h2><?php echo get_the_category()[0]->name; ?></h2>
-                                    <div class="project-brief">
-						                <?php echo substr(get_field('project_description'), 0, 60)?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
 
                 <?php endwhile; ?>
                 <?php endif; wp_reset_postdata(); ?>

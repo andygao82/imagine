@@ -28,6 +28,11 @@
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
+//	transition time
+@mixin transition($time: .25s){
+	-webkit-transition: all $time ease-in-out; /* Safari prior 6.1 */
+	transition: all $time ease-in-out;
+}
 
 //  flex setting
 @mixin flex($justifyContent: space-between, $alignItems: center, $flexWrap: wrap, $flexDirection: row){
@@ -65,14 +70,19 @@
 	display: inline-block;
 	color: #373B3C;
 	font-size: 1.6rem;
+	@include transition();
 	span{
 		display: inline-block;
-		padding-bottom: .6em;
+		padding: .6em 0;
 		margin-right: 17px;
+		@include transition();
 	}
+
 	&:after{
 		@include goldenBar(120px, 4px);
 		display: block;
+		margin-right: 0;
+		@include transition();
 	}
 }
 
@@ -83,8 +93,3 @@
 	margin-left: 5px;
 }
 
-//	transition time
-@mixin transition($time: .25s){
-	-webkit-transition: all .25s ease-in-out; /* Safari prior 6.1 */
-	transition: all .25s ease-in-out;
-}

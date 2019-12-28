@@ -36,17 +36,17 @@
                         <a class="ii-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" >
 		                    <?php echo file_get_contents($img_path."/images/logo.svg"); ?>
                         </a>
-
-                        <nav id="site-navigation" class="main-navigation">
-		                    <?php
-		                    wp_nav_menu( array(
-			                    'theme_location' => 'menu-1',
-			                    'menu_id'        => 'primary-menu',
-		                    ) );
-		                    ?>
-                        </nav><!-- #site-navigation -->
-
-                        <a href="tel:+61379916991" class="phone">+61 (0)3 7991 6991</a>
+                        <div class="header-wrapper-right">
+                            <nav id="site-navigation" class="main-navigation">
+		                        <?php
+		                        wp_nav_menu( array(
+			                        'theme_location' => 'menu-1',
+			                        'menu_id'        => 'primary-menu',
+		                        ) );
+		                        ?>
+                            </nav><!-- #site-navigation -->
+                            <a href="tel:+61379916991" class="phone">+61 (0)3 7991 6991</a>
+                        </div>
                     </div>
                 </div>
             </div>

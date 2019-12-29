@@ -9,7 +9,7 @@ get_header();
         <div class="row">
             <div class="col-12">
                 <div class="wrapper">
-                    <h1 class="page-title section-title"><span><?= get_field('section_1_title') ?></span></h1>
+                    <h1 class="page-title section-title loading-title"><span>DÉCOR YOUR HOME </span><span>DESIGN YOUR DREAM</span></h1>
                     <div class="section-content"><?= get_field('section_1_content')?></div>
                     <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     <ul class="social-media">
@@ -85,14 +85,18 @@ get_header();
             <div class="col">
                 <div class="wrapper">
                     <div class="about-col__left">
-                        <h3><?= get_field('section_2_subtitle')?></h3>
-                        <img src="<?= get_template_directory_uri('/')?>/images/section-image-1.png" alt="Imagine Interior">
+                        <h3 class="loading-title"><span>PROPERTY STYLING</span><span>& INTERIOR DESIGN</span></h3>
+                        <div class="slide-in-image">
+                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-1.png" alt="Imagine Interior">
+                        </div>
                     </div>
                     <div class="about-col__mid">
-                        <img src="<?= get_template_directory_uri('/')?>/images/section-image-2.png" alt="Imagine Interior">
+                        <div class="slide-in-image">
+                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-2.png" alt="Imagine Interior">
+                        </div>
                     </div>
                     <div class="about-col__right">
-                        <h2><?= get_field('section_2_title')?></h2>
+                        <h2 class="loading-title"><span>About Us +</span></h2>
                         <div class="section-description">
 		                    <?= get_field('section_2_content')?>
                         </div>
@@ -107,7 +111,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2><?= get_field('section_3_title')?></h2>
+                <h2 class="loading-title"><span>FEATURED PROJECTS +</span></h2>
             </div>
         </div>
         <div class="row">
@@ -149,7 +153,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2><?= get_field('section_4_title')?></h2>
+                <h2 class="loading-title"><span>Our Service +</span></h2>
                 <span id="side-slogan">Imagine Interior / Decor Your Home / Design Your Dream</span>
             </div>
         </div>

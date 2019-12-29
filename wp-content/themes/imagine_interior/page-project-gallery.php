@@ -10,7 +10,7 @@ get_header();
                 <div class="wrapper">
                     <span id="side-slogan">Imagine Interior / Project Gallery</span>
 
-                    <div class="banner-img">
+                    <div class="banner-img ">
                         <img src="<?= get_template_directory_uri('/')?>/images/gallery_hero.png" alt="Imagine Interior">
                     </div>
                     <div class="banner-content">
@@ -22,7 +22,7 @@ get_header();
                             </div>
 
 
-                            <h1 class="page-title">Our Project<br>Gallery</h1>
+                            <h1 class="page-title loading-title"><span>Our Project</span><span>Gallery</span></h1>
                             <a href="#" id="sd-view">
                                 <img src="<?= get_template_directory_uri('/')?>/images/arrow-down.svg" alt="Imagine Interior">
                                 <span>Scroll down to view our projects</span>

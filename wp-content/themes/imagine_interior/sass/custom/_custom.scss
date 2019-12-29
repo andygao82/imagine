@@ -10,7 +10,50 @@ body{
 .page, .post{
     margin: 0;
 }
+.loading-title{
+    span{
+        display: block;
+        overflow: hidden;
+        height: 1.3em;
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            @include transition(1s);
+            transition-delay: 1.5s;
+        }
+    }
+    &.loaded-title{
+        span{
+            &:before{
+                height: 0;
+            }
+        }
+    }
+}
+.slide-in-image{
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: $color__background-body;
+        z-index: 2;
+        @include transition(1.5s);
 
+    }
+    &.slided-in-image{
+        &:before{
+            width: 0;
+        }
+    }
+}
 /////////////////////////////////////////////////////////////////////////////
 .container{
     max-width: 1470px;
@@ -79,13 +122,10 @@ section{
     }
     h2{
         font-size: 4rem;
-        line-height: 2;
         font-family: 'Futura PT Demi';
         font-weight: 500;
         letter-spacing: 3.6px;
-        &:after{
-            @include titleWithPlus();
-        }
+        margin-bottom: 1em;
         @media screen and (max-width: 1700px){
             font-size: 3.33rem;
             letter-spacing: 3px;
@@ -515,30 +555,18 @@ a.ii-logo{
     }
     &-col__left{
         width: 30%;
-        transform: translateY(400px);
         @include transition(.5s);
-        &.normal{
-            transform: translateY(0);
-        }
         h3{
             margin: .5em 0 1.5em;
         }
     }
     &-col__mid{
         width: 33%;
-        transform: translateY(400px);
         @include transition(1s);
-        &.normal{
-            transform: translateY(0);
-        }
     }
     &-col__right{
         width: 30%;
-        transform: translateY(400px);
         @include transition(1.5s);
-        &.normal{
-            transform: translateY(0);
-        }
         h2{
             margin-top: 1.5em;
         }
@@ -561,11 +589,6 @@ a.ii-logo{
     }
     @for $i from 1 through 3{
         .featured-col:nth-child(#{$i}){
-            transform: translateY(300px);
-            @include transition(#{$i/2}s);
-            &.normal{
-                transform: translateY(30px);
-            }
             .wrapper{
                 position: relative;
                 color: #FFFFFF;
@@ -1374,9 +1397,11 @@ a.ii-logo{
                     }
                 }
             }
+            .slide-in-image{
+                float: right;
+            }
             img{
                 display: inline-block;
-                float: right;
                 @media screen and (max-width: 1700px){
                     width: 350px;
                 }

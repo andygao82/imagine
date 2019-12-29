@@ -8,7 +8,7 @@ get_header();
         <div class="row">
             <div class="col">
                 <div class="wrapper">
-                    <h1 class="page-title">GET IN TOUCH</h1>
+                    <h1 class="page-title loading-title"><span>GET IN TOUCH</span></h1>
                     <div class="section-content">
                         <div class="section-content__left">
                             <div class="section-text">
@@ -21,10 +21,14 @@ get_header();
                                     <li><strong>Address:</strong><span>Unit 8, 888 XXXX Road<br> SURBURB NAME, VIC 3000</span></li>
                                 </ul>
                             </div>
-                            <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_1.png" alt="Imagine Interior">
+                            <div class="slide-in-image">
+                                <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_1.png" alt="Imagine Interior">
+                            </div>
                         </div>
                         <div class="section-content__right">
-                            <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_2.png" alt="Imagine Interior">
+                            <div class="slide-in-image">
+                                <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_2.png" alt="Imagine Interior">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,7 +42,7 @@ get_header();
             <div class="col">
                 <div class="wrapper">
                     <span id="side-slogan">Imagine Interior / Contact Us</span>
-                    <h2>GET YOUR OBLIGATION-FREE<br/>QUOTATION HERE</h2>
+                    <h2 class="loading-title"><span>GET YOUR OBLIGATION-FREE</span> <span>QUOTATION HERE</span></h2>
                     <div class="inner-wrapper">
                         <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]')?>
                     </div>

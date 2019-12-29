@@ -8,7 +8,7 @@ get_header();
         <div class="row">
             <div class="col">
                 <div class="wrapper">
-                    <h1 class="page-title">Our Service</h1>
+                    <h1 class="page-title loading-title"><span>Our Service</span></h1>
                     <div class="section-description"><?= get_field('our_service_text')?></div>
                     <div class="service-top__image">
                         <img src="<?= get_field('our_service_image')?>" alt="Our Service">
@@ -26,10 +26,12 @@ get_header();
                 <div class="wrapper">
                     <span id="side-slogan">Imagine Interior / Our Service</span>
                     <div class="service-mid__image">
-                        <img src="<?= get_field('the_home_image')?>" alt="THE HOME - Six Weeks">
+                        <div class="slide-in-image">
+                            <img src="<?= get_field('the_home_image')?>" alt="THE HOME - Six Weeks">
+                        </div>
                     </div>
                     <div class="service-mid__content">
-                        <h2><span>"THE HOME"</span> - Six Weeks</h2>
+                        <h2 class="loading-title"><span class="trans-span">"THE HOME"</span> <span>- Six Weeks</span></h2>
                         <div class="section-description"><?= get_field('the_home_content')?></div>
                     </div>
                 </div>
@@ -44,10 +46,12 @@ get_header();
             <div class="col">
                 <div class="wrapper">
                     <div class="service-bottom__image">
-                        <img src="<?= get_field('turn_key_image')?>" alt="THE MOVE-IN">
+                        <div class="slide-in-image">
+                            <img src="<?= get_field('turn_key_image')?>" alt="THE MOVE-IN">
+                        </div>
                     </div>
                     <div class="service-bottom__content">
-                        <h2>"THE AIR BNB TURN-KEY"</h2>
+                        <h2 class="loading-title"><span>"THE AIR BNB TURN-KEY"</span></h2>
                         <div class="section-description"><?= get_field('turn_key_content')?></div>
                     </div>
                 </div>
@@ -62,10 +66,12 @@ get_header();
             <div class="col">
                 <div class="wrapper">
                     <div class="service-under__image">
-                        <img src="<?= get_field('the_move_in_image')?>" alt="THE MOVE-IN">
+                        <div class="slide-in-image">
+                            <img src="<?= get_field('the_move_in_image')?>" alt="THE MOVE-IN">
+                        </div>
                     </div>
                     <div class="service-under__content">
-                        <h2>"THE MOVE-IN"</h2>
+                        <h2 class="loading-title"><span>"THE MOVE-IN"</span></h2>
                         <div class="section-description"><?= get_field('the_move_in_content')?></div>
                     </div>
                 </div>

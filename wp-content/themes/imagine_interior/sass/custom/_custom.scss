@@ -17,6 +17,18 @@ body{
     @media screen and (max-width: 1700px){
         max-width: 1300px;
     }
+    @media screen and (max-width: 1500px){
+        max-width: 1140px;
+    }
+    @media screen and (max-width: 991px){
+        max-width: 960px;
+    }
+    @media screen and (max-width: 767px){
+        max-width: 720px;
+    }
+    @media screen and (max-width: 575px){
+        max-width: 540px;
+    }
 }
 
 a.link-btn{
@@ -52,11 +64,18 @@ h1.page-title{
         font-size: 4.2rem;
         letter-spacing: 3.75px;
     }
+    @media screen and (max-width: 1700px){
+        font-size: 4rem;
+        letter-spacing: 3.25px;
+    }
 }
 section{
     margin-bottom: 190px;
     @media screen and (max-width: 1700px){
         margin-bottom: 160px;
+    }
+    @media screen and (max-width: 1500px){
+        margin-bottom: 120px;
     }
     h2{
         font-size: 4rem;
@@ -122,6 +141,9 @@ a.ii-logo{
             @media screen and (max-width: 1700px){
                 margin-right: 70px;
             }
+            @media screen and (max-width: 1500px){
+                margin-right: 50px;
+            }
             a{
                 position: relative;
                 font-family: $font__link;
@@ -175,6 +197,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             width: calc(100% - 300px);
         }
+        @media screen and (max-width: 1500px){
+            width: calc(100% - 275px);
+        }
     }
     a.phone{
         position: relative;
@@ -199,6 +224,9 @@ a.ii-logo{
             &:before{
                 height: 18px;
             }
+        }
+        @media screen and (max-width: 1700px){
+            padding-left: 30px;
         }
     }
 }
@@ -309,6 +337,10 @@ a.ii-logo{
                 margin-top: 166px;
                 margin-bottom: 20px;
             }
+            @media screen and (max-width: 1500px){
+                margin-top: 120px;
+                margin-bottom: 20px;
+            }
             h1.page-title{
                 margin-top: 0;
             }
@@ -329,11 +361,17 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             left: 315px;
         }
+        @media screen and (max-width: 1700px){
+            left: 290px;
+        }
         &-wrapper{
             ul.slider{
                 width: 1230px;
                 @media screen and (max-width: 1700px){
                     width: 1025px;
+                }
+                @media screen and (max-width: 1700px){
+                    width: 850px;
                 }
                 margin: 0;
                 padding: 0;
@@ -345,6 +383,10 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         width: 1025px;
                         margin-right: 42px;
+                    }
+                    @media screen and (max-width: 1700px){
+                        width: 850px;
+                        margin-right: 30px;
                     }
                     &:last-child{
                         margin-right: 0;
@@ -364,6 +406,9 @@ a.ii-logo{
             font-size: 0;
             @media screen and (max-width: 1700px){
                 bottom: 7px;
+            }
+            @media screen and (max-width: 1500px){
+                bottom: 0;
             }
             span{
                 position: relative;
@@ -434,6 +479,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             margin-bottom: 115px;
         }
+        @media screen and (max-width: 1500px){
+            margin-bottom: 80px;
+        }
         z-index: 5;
         ul{
             @include unstyled();
@@ -454,6 +502,9 @@ a.ii-logo{
         margin-top: 170px;
         @media screen and (max-width: 1700px){
             margin-top: 140px;
+        }
+        @media screen and (max-width: 1700px){
+            margin-top: 100px;
         }
     }
 }
@@ -661,6 +712,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             margin-bottom: 133.33px;
         }
+        @media screen and (max-width: 1500px){
+            margin-bottom: 100px;
+        }
         .wrapper{
             padding-left: 120px;
             @media screen and (max-width: 1700px){
@@ -676,9 +730,15 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         margin-right: 25px;
                     }
+                    @media screen and (max-width: 1500px){
+                        width: 230px;
+                    }
                 }
                 &__right{
                     margin-right: 0;
+                    @media screen and (max-width: 1500px){
+                        width: 380px;
+                    }
                 }
             }
 
@@ -690,11 +750,17 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             margin-bottom: 133.33px;
         }
+        @media screen and (max-width: 1500px){
+            margin-bottom: 100px;
+        }
         .wrapper{
             padding-left: 60px;
             transform: translateY(50%);
             @media screen and (max-width: 1700px){
                 padding-left: 50px;
+            }
+            @media screen and (max-width: 1500px){
+                padding-left: 10px;
             }
         }
         .service-images{
@@ -705,11 +771,17 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         margin-right: 25px;
                     }
+                    @media screen and (max-width: 1500px){
+                        width: 260px;
+                    }
                 }
                 &__right{
                     margin-right: 0;
                     img:first-child{
                         margin-left: 0;
+                    }
+                    @media screen and (max-width: 1500px){
+                        width: 350px;
                     }
                 }
             }
@@ -745,9 +817,15 @@ a.ii-logo{
                 img:first-child{
                     margin-left: auto;
                 }
+                @media screen and (max-width: 1700px){
+                    width: 375px;
+                }
             }
             &__left{
                 margin-right: 0;
+                @media screen and (max-width: 1700px){
+                    width: 230px;
+                }
             }
         }
     }
@@ -802,6 +880,9 @@ a.ii-logo{
             width: 50px;
             margin-right: 83.33px;
         }
+        @media screen and (max-width: 1700px){
+            margin-right: 66.66px;
+        }
         &:last-child{
             margin-right: 0;
         }
@@ -841,6 +922,10 @@ a.ii-logo{
             font-size: 4.2rem;
             letter-spacing: 3.75px;
         }
+        @media screen and (max-width: 1700px){
+            font-size: 3.6rem;
+            letter-spacing: 3.2px;
+        }
         &::after{
             display: none;
         }
@@ -875,6 +960,10 @@ a.ii-logo{
             max-width: 770px;
             padding: 62.5px;
         }
+        @media screen and (max-width: 1700px){
+            max-width: 700px;
+            padding: 50px;
+        }
     }
     &__image{
         position: absolute;
@@ -882,6 +971,9 @@ a.ii-logo{
         right: 0;
         @media screen and (max-width: 1700px){
             max-width: 725px;
+        }
+        @media screen and (max-width: 1500px){
+            max-width: 625px;
         }
     }
 }
@@ -914,6 +1006,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 680px
         }
+        @media screen and (max-width: 1700px){
+            max-width: 600px
+        }
     }
     &__content{
         float: right;
@@ -922,9 +1017,16 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 480px
         }
+        @media screen and (max-width: 1700px){
+            max-width: 435px
+        }
         h2{
             transform: translateX(-17%);
             margin-top: 20%;
+            @media screen and (max-width: 1700px){
+                transform: translateX(-9%);
+                margin-top: 15%;
+            }
         }
         .section-description{
             padding-left: 40px;
@@ -945,6 +1047,9 @@ a.ii-logo{
                 list-style: none;
                 li{
                     margin-bottom: 1.5em;
+                    @media screen and (max-width: 1500px){
+                        margin-bottom: 1em;
+                    }
                     &::before{
                         content: '+';
                         display: inline-block;
@@ -993,6 +1098,9 @@ a.ii-logo{
                 @media screen and (max-width: 1700px){
                     top: -34px;
                 }
+                @media screen and (max-width: 1700px){
+                    top: -17px;
+                }
             }
         }
     }
@@ -1015,6 +1123,11 @@ a.ii-logo{
             padding: 62.5px 62.5px 0 62.5px;
             margin-top: 62.5px;
         }
+        @media screen and (max-width: 1700px){
+            max-width: 650px;
+            padding: 50px 50px 0 50px;
+            margin-top: 50px;
+        }
     }
     &__image{
         position: absolute;
@@ -1022,6 +1135,9 @@ a.ii-logo{
         left: 0;
         @media screen and (max-width: 1700px){
             max-width: 775px;
+        }
+        @media screen and (max-width: 1500px){
+            max-width: 675px;
         }
     }
 }
@@ -1057,6 +1173,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 665px;
         }
+        @media screen and (max-width: 1500px){
+            max-width: 555px;
+        }
     }
     &__content{
         float: right;
@@ -1064,6 +1183,9 @@ a.ii-logo{
         max-width: 565px;
         @media screen and (max-width: 1700px){
             max-width: 475px;
+        }
+        @media screen and (max-width: 1700px){
+            max-width: 425px;
         }
         h2{
             span{
@@ -1111,12 +1233,18 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 665px;
         }
+        @media screen and (max-width: 1500px){
+            max-width: 555px;
+        }
     }
     &__content{
         float: left;
         width: 606px;
         @media screen and (max-width: 1700px){
             max-width: 510px;
+        }
+        @media screen and (max-width: 1500px){
+            max-width: 440px;
         }
         .section-description{
             padding-left: 125px;
@@ -1156,6 +1284,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 665px;
         }
+        @media screen and (max-width: 1500px){
+            max-width: 555px;
+        }
     }
     &__content{
         float: right;
@@ -1164,6 +1295,10 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             width: 425px;
             padding-top: 66px;
+        }
+        @media screen and (max-width: 1700px){
+            width: 378px;
+            padding-top: 50px;
         }
         h2{
             transform: translateX(-23%);
@@ -1180,6 +1315,10 @@ a.ii-logo{
             @media screen and (max-width: 1700px){
                 width: 780px;
                 padding: 15px 0 0 62.5px;
+            }
+            @media screen and (max-width: 1700px){
+                width: 680px;
+                padding: 15px 0 0 50px;
             }
             .section-text{
                 position: relative;
@@ -1238,10 +1377,16 @@ a.ii-logo{
             img{
                 display: inline-block;
                 float: right;
+                @media screen and (max-width: 1700px){
+                    width: 350px;
+                }
             }
         }
         &__right{
             float: right;
+            @media screen and (max-width: 1700px){
+                width: 400px;
+            }
         }
     }
 }
@@ -1258,8 +1403,14 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             padding-top: 50px;
         }
+        @media screen and (max-width: 1500px){
+            padding: 50px;
+        }
         h2{
             transform: translateY(-75%);
+            @media screen and (max-width: 1500px){
+                transform: unset;
+            }
         }
         #side-slogan{
             top: 360px;
@@ -1267,9 +1418,15 @@ a.ii-logo{
             &:after{
                 width: 180px;
             }
+            @media screen and (max-width: 1500px){
+                left: 50px;
+            }
         }
         .inner-wrapper{
             padding-left: 125px;
+            @media screen and (max-width: 1500px){
+                padding-left: 75px;
+            }
         }
         form{
             .field{
@@ -1368,6 +1525,9 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 715px;
         }
+        @media screen and (max-width: 1700px){
+            max-width: 615px;
+        }
     }
     .banner-content{
         width: calc(100% - 858px);
@@ -1377,6 +1537,9 @@ a.ii-logo{
         float: left;
         @media screen and (max-width: 1700px){
             width: calc(100% - 715px);
+        }
+        @media screen and (max-width: 1700px){
+            width: calc(100% - 615px);
         }
         h1{
             position: absolute;
@@ -1409,7 +1572,6 @@ a.ii-logo{
                 left: 30px;
                 @include transition();
                 @media screen and (max-width: 1700px){
-
                     left: 25px;
                 }
             }
@@ -1446,6 +1608,9 @@ a.ii-logo{
                 margin-bottom: 10px;
                 @media screen and (max-width: 1700px){
                     width: 210px;
+                }
+                @media screen and (max-width: 1700px){
+                    width: 150px;
                 }
             }
         }
@@ -1586,6 +1751,11 @@ a.ii-logo{
             padding: 37.5px 46px;
             font-size: 2rem;
         }
+        @media screen and (max-width: 1500px){
+            max-width: 400px;
+            padding: 30px 35px;
+            font-size: 1.8rem;
+        }
         h1.page-title{
             margin-top: 0;
             position: relative;
@@ -1595,6 +1765,10 @@ a.ii-logo{
             letter-spacing: 4.5px;
             margin-bottom: .8em;
             padding-bottom: .8em;
+            @media screen and (max-width: 1500px){
+                font-size: 3.6rem;
+                letter-spacing: 3.5px;
+            }
             &:after{
                 content: '';
                 display: block;
@@ -1634,11 +1808,17 @@ a.ii-logo{
             flex-wrap: wrap;
             .project-image{
                 margin-bottom: 50px;
+                @media screen and (max-width: 1500px){
+                    margin-bottom: 30px;
+                }
                 &:nth-child(1){
                     width: 100%;
                     max-width: 859px;
                     @media screen and (max-width: 1700px){
                         max-width: 754px;
+                    }
+                    @media screen and (max-width: 1500px){
+                        max-width: 670px;
                     }
                 }
                 &:nth-child(2){
@@ -1647,12 +1827,18 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         max-width: 462px;
                     }
+                    @media screen and (max-width: 1700px){
+                        max-width: 408px;
+                    }
                 }
                 &:nth-child(3){
                     width: 100%;
                     max-width: 526px;
                     @media screen and (max-width: 1700px){
                         max-width: 462px;
+                    }
+                    @media screen and (max-width: 1700px){
+                        max-width: 408px;
                     }
                 }
                 &:nth-child(4){
@@ -1661,12 +1847,18 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         max-width: 754px;
                     }
+                    @media screen and (max-width: 1500px){
+                        max-width: 670px;
+                    }
                 }
                 &:nth-child(5){
                     width: 100%;
                     max-width: 859px;
                     @media screen and (max-width: 1700px){
                         max-width: 754px;
+                    }
+                    @media screen and (max-width: 1500px){
+                        max-width: 670px;
                     }
                 }
             }

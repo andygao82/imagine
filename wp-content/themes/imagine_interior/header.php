@@ -33,6 +33,10 @@
                 <div class="col">
                     <div class="header-wrapper">
 	                    <?php $img_path = get_template_directory_uri('/'); ?>
+                        <a href="#" class="menu-icon">
+                            <span></span>
+                            <span></span>
+                        </a>
                         <a class="ii-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" >
 		                    <?php echo file_get_contents($img_path."/images/logo.svg"); ?>
                         </a>

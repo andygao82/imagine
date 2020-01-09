@@ -6,6 +6,11 @@ jQuery(document).ready(function ($) {
        }, 1500);
    });
 
+   $('.menu-icon').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+   });
+
     inView('.banner').on('enter', function(){
         $('.banner').find('.loading-title').addClass('loaded-title');
     });

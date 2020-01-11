@@ -36,6 +36,16 @@ get_header();
                         </span>
                     </div>
                 </div>
+                <div class="mobile-slider">
+                    <div class="mobile-slider-wrapper flexslider" id="mobile-banner-slider">
+                        <ul class="slides">
+                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
+                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
+                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
+                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -115,7 +125,7 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 featured-col">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
                 <div class="wrapper">
                     <div class="inner-wrapper">
                         <h3>Hawthorn</h3>
@@ -125,7 +135,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 featured-col">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
                 <div class="wrapper">
                     <div class="inner-wrapper">
                         <h3>Albert Park</h3>
@@ -135,7 +145,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 featured-col">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
                 <div class="wrapper">
                     <div class="inner-wrapper">
                         <h3>Hawthorn</h3>
@@ -158,7 +168,7 @@ get_header();
             </div>
         </div>
         <div class="row service-1">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="wrapper">
                     <span class="bars">
                         <span class="bar"></span>
@@ -172,7 +182,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__left">
                         <img src="<?= $img_path?>/images/service_1.png" alt="Imagine Interior">
@@ -185,7 +195,7 @@ get_header();
             </div>
         </div>
         <div class="row service-2">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="wrapper">
                     <span class="bars">
                         <span class="bar"></span>
@@ -201,7 +211,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="service-images">
                     <div class="service-image__left">
                         <img src="<?= $img_path?>/images/service_4.png" alt="Imagine Interior">
@@ -214,7 +224,7 @@ get_header();
             </div>
         </div>
         <div class="row service-3">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="wrapper">
                     <span class="bars">
                         <span class="bar"></span>
@@ -232,7 +242,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__right">
                         <img src="<?= $img_path?>/images/service_7.png" alt="Imagine Interior">

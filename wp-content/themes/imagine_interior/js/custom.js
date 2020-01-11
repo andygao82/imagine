@@ -6,9 +6,15 @@ jQuery(document).ready(function ($) {
        }, 1500);
    });
 
+    $('#mobile-banner-slider').flexslider({
+        animation: "fade"
+    });
+
    $('.menu-icon').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('open');
+        $('.header-wrapper-right').toggleClass('active');
+        $('body').toggleClass('live-body');
    });
 
     inView('.banner').on('enter', function(){

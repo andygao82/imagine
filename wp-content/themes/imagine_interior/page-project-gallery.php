@@ -50,7 +50,7 @@ get_header();
                 if ( $result-> have_posts() ) : ?>
                 <?php while ( $result->have_posts() ) : $result->the_post(); ?>
                     <?php $projectBg = get_field('project_banner_image') ?>
-                        <div class="col-6 col-sm-4 col-md-3 col-project-item">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-project-item">
                             <div class="wrapper" style="background-image: url('<?= $projectBg ?>')">
                                 <a class="inner-wrapper" href="<?php echo get_permalink()?>">
                                     <h3><?php echo get_the_category()[0]->name; ?></h3>
@@ -60,10 +60,6 @@ get_header();
                                 </a>
                             </div>
                         </div>
-
-
-
-
                 <?php endwhile; ?>
                 <?php endif; wp_reset_postdata(); ?>
         </div>

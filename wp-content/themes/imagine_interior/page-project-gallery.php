@@ -11,7 +11,7 @@ get_header();
                     <span id="side-slogan">Imagine Interior / Project Gallery</span>
 
                     <div class="banner-img ">
-                        <img src="<?= get_template_directory_uri('/')?>/images/gallery_hero.png" alt="Imagine Interior">
+                        <img src="<?= get_template_directory_uri('/')?>/images/gallery_hero.jpg" alt="Imagine Interior">
                     </div>
                     <div class="banner-content">
 

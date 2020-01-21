@@ -21,10 +21,10 @@ get_header();
                 <div class="home-slider">
                     <div class="home-slider-wrapper" id="home-banner-slider">
                         <ul class="slider">
-                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_1.png" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_1.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_2.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_3.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_4.jpg" alt="Imagine Interior"></li>
                         </ul>
                     </div>
                     <div class="home-slider-nav">
@@ -39,10 +39,10 @@ get_header();
                 <div class="mobile-slider">
                     <div class="mobile-slider-wrapper flexslider" id="mobile-banner-slider">
                         <ul class="slides">
-                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
-                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
-                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
-                            <li style="background-image: url('<?= $img_path?>/images/slide_img_1.png')"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_1.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_2.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_3.jpg" alt="Imagine Interior"></li>
+                            <li><img src="<?= $img_path?>/images/slide_img_4.jpg" alt="Imagine Interior"></li>
                         </ul>
                     </div>
                 </div>
@@ -97,12 +97,12 @@ get_header();
                     <div class="about-col__left">
                         <h3 class="loading-title"><span>PROPERTY STYLING</span><span>& INTERIOR DESIGN</span></h3>
                         <div class="slide-in-image">
-                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-1.png" alt="Imagine Interior">
+                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-1.jpg" alt="Imagine Interior">
                         </div>
                     </div>
                     <div class="about-col__mid">
                         <div class="slide-in-image">
-                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-2.png" alt="Imagine Interior">
+                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-2.jpg" alt="Imagine Interior">
                         </div>
                     </div>
                     <div class="about-col__right">

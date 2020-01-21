@@ -98,3 +98,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+jQuery(window).load(function(){
+    jQuery('.loading').delay(1000).fadeOut('slow')
+})

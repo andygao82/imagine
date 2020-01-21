@@ -56,5 +56,14 @@
             </div>
         </div><!-- .site-branding -->
 	</header><!-- #masthead -->
-
+    <div class="loading">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
 	<div id="content" class="site-content">

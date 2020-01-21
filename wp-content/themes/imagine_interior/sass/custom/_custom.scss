@@ -1372,7 +1372,7 @@ a.ii-logo{
     background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 57%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
     @media screen and (max-width: 1700px){
         padding-bottom: 160px;
-        background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 53.5%, rgba(255,255,255,1) 53.5%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 50.5%, rgba(255,255,255,1) 50.5%, rgba(255,255,255,1) 100%);
     }
     #side-slogan{
         top: 60px;
@@ -1408,13 +1408,18 @@ a.ii-logo{
         @media screen and (max-width: 1700px){
             max-width: 475px;
         }
-        @media screen and (max-width: 1700px){
+        @media screen and (max-width: 1500px){
             max-width: 425px;
         }
         h2{
+            padding-left: 40px;
             span{
                 display: block;
-                transform: translateX(-15%);
+                text-transform: capitalize;
+                &.trans-span{
+                    text-transform: uppercase;
+                    transform: translateX(-24%);
+                }
             }
             margin-top: 30%;
         }
@@ -1537,10 +1542,10 @@ a.ii-logo{
             float: left;
             padding: 18px 0 0 75px;
             @media screen and (max-width: 1700px){
-                width: 780px;
+                width: 755px;
                 padding: 15px 0 0 62.5px;
             }
-            @media screen and (max-width: 1700px){
+            @media screen and (max-width: 1500px){
                 width: 680px;
                 padding: 15px 0 0 50px;
             }
@@ -1604,13 +1609,19 @@ a.ii-logo{
             img{
                 display: inline-block;
                 @media screen and (max-width: 1700px){
-                    width: 350px;
+                    width: 415px;
+                }
+                @media screen and (max-width: 1500px){
+                    width: 340px;
                 }
             }
         }
         &__right{
             float: right;
             @media screen and (max-width: 1700px){
+                width: 465px;
+            }
+            @media screen and (max-width: 1500px){
                 width: 400px;
             }
         }
@@ -1627,14 +1638,14 @@ a.ii-logo{
         background-color: #ffffff;
         padding: 0 125px 62.5px 84px;
         @media screen and (max-width: 1700px){
-            padding-top: 50px;
-        }
-        @media screen and (max-width: 1500px){
-            padding: 50px;
+
         }
         h2{
             transform: translateY(-75%);
-            @media screen and (max-width: 1500px){
+            @media screen and (max-width: 1700px){
+                margin-bottom: 1em;
+            }
+            @media screen and (max-width: 1199px){
                 transform: unset;
             }
         }
@@ -2053,7 +2064,7 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         max-width: 462px;
                     }
-                    @media screen and (max-width: 1700px){
+                    @media screen and (max-width: 1500px){
                         max-width: 408px;
                     }
                 }
@@ -2063,7 +2074,7 @@ a.ii-logo{
                     @media screen and (max-width: 1700px){
                         max-width: 462px;
                     }
-                    @media screen and (max-width: 1700px){
+                    @media screen and (max-width: 1500px){
                         max-width: 408px;
                     }
                 }
@@ -2415,6 +2426,46 @@ a.ii-logo{
                     order: 3;
                 }
             }
+            &-mid{
+                background: #f5f6f7;
+                padding-bottom: 0;
+                .wrapper{
+                    padding-left: 50px;
+                }
+                &__image{
+                    float: none;
+                }
+                &__content{
+                    float: none;
+                    h2{
+                        transform: unset;
+                    }
+                }
+            }
+            &-bottom{
+                background: #f5f6f7;
+                .wrapper{
+                    padding-left: 50px;
+                }
+                &__image{
+                    float: none;
+                    margin-bottom: 40px;
+                }
+                &__content{
+                    float: none;
+                    h2{
+                        transform: unset;
+                    }
+                    ul{
+                        padding-left: 0;
+                    }
+                    .section-description{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
     .single{
@@ -2531,23 +2582,31 @@ a.ii-logo{
                 }
                 .section-description{
                     order: 3;
+                    margin-top: 0;
+                    padding-top: 0;
                 }
             }
             &-mid{
                 background: transparent;
                 padding-bottom: 0;
+                .wrapper{
+                    padding-left: 50px;
+                }
                 &__content{
                     max-width: unset;
                     h2{
                         display: inline-block;
                         margin-top: 40px;
+                        padding-left: 0;
                         span{
                             transform: translateX(0);
                             &:last-child{
                                 transform: translateX(50%);
                             }
                         }
-
+                    }
+                    .section-description{
+                        padding-left: 0;
                     }
                 }
             }
@@ -2756,6 +2815,9 @@ a.ii-logo{
         .about-bottom{
             margin-bottom: 60px;
             background: transparent;
+            .wrapper{
+                padding-left: 0;
+            }
             &__image{
                 float: none;
                 margin-bottom: 60px;

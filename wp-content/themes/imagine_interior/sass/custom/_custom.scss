@@ -1121,6 +1121,15 @@ a.ii-logo{
                 opacity: 1;
                 transform: translateY(0);
             }
+            &.delay1{
+                transition-delay: .5s;
+            }
+            &.delay2{
+                transition-delay: 1s;
+            }
+            &.delay3{
+                transition-delay: 1.5s;
+            }
         }
         .service-image{
             &__right{

@@ -185,11 +185,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_1.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_1.png" alt="Imagine Interior" class="delay1">
                     </div>
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_2.png" alt="Imagine Interior">
-                        <img src="<?= $img_path?>/images/service_3.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_2.png" alt="Imagine Interior" class="delay2">
+                        <img src="<?= $img_path?>/images/service_3.png" alt="Imagine Interior" class="delay3">
                     </div>
                 </div>
             </div>
@@ -214,11 +214,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="service-images">
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_4.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_4.png" alt="Imagine Interior" class="delay1">
                     </div>
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_5.png" alt="Imagine Interior">
-                        <img src="<?= $img_path?>/images/service_6.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_5.png" alt="Imagine Interior" class="delay2">
+                        <img src="<?= $img_path?>/images/service_6.png" alt="Imagine Interior" class="delay3">
                     </div>
                 </div>
             </div>
@@ -245,11 +245,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_7.png" alt="Imagine Interior">
-                        <img src="<?= $img_path?>/images/service_9.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_7.png" alt="Imagine Interior" class="delay1">
+                        <img src="<?= $img_path?>/images/service_9.png" alt="Imagine Interior" class="delay2">
                     </div>
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_8.png" alt="Imagine Interior">
+                        <img src="<?= $img_path?>/images/service_8.png" alt="Imagine Interior" class="delay3">
                     </div>
 
                 </div>

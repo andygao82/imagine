@@ -39,10 +39,10 @@ get_header();
                 <div class="mobile-slider">
                     <div class="mobile-slider-wrapper flexslider" id="mobile-banner-slider">
                         <ul class="slides">
-                            <li><img src="<?= $img_path?>/images/slide_img_1.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_2.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_3.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_4.jpg" alt="Imagine Interior"></li>
+                            <li style="background: url(<?= $img_path?>/images/slide_img_1.jpg)"></li>
+                            <li style="background: url(<?= $img_path?>/images/slide_img_2.jpg)"></li>
+                            <li style="background: url(<?= $img_path?>/images/slide_img_3.jpg)"></li>
+                            <li style="background: url(<?= $img_path?>/images/slide_img_4.jpg)"></li>
                         </ul>
                     </div>
                 </div>

@@ -703,14 +703,9 @@ a.ii-logo{
             z-index: 9;
             position: absolute;
             bottom: 0;
-            left: 30px;
+            left: 0;
             font-size: 0;
-            @media screen and (max-width: 1700px){
-                bottom: 7px;
-            }
-            @media screen and (max-width: 1500px){
-                bottom: 0;
-            }
+
             span{
                 position: relative;
                 display: inline-block;
@@ -1415,12 +1410,12 @@ a.ii-logo{
                 position: absolute;
                 @include goldenBar(4px, 135px);
                 margin-right: 0;
-                top: -45px;
+                top: -40px;
                 @media screen and (max-width: 1700px){
-                    top: -34px;
+                    top: -15px;
                 }
-                @media screen and (max-width: 1700px){
-                    top: -17px;
+                @media screen and (max-width: 1500px){
+                    top: -14px;
                 }
             }
         }
@@ -1622,17 +1617,31 @@ a.ii-logo{
             width: 425px;
             padding-top: 66px;
         }
-        @media screen and (max-width: 1700px){
+        @media screen and (max-width: 1500px){
             width: 378px;
             padding-top: 50px;
         }
         h2{
             transform: translateX(-23%);
+            @media screen and (max-width: 1700px){
+                transform: translateX(-35%);
+            }
+            @media screen and (max-width: 1700px){
+                transform: translateX(-25%);
+            }
         }
+
     }
 }
 
 .contact-top{
+    margin-top: 30px;
+    @media screen and (max-width: 992px){
+        margin-top: 0;
+    }
+    h1.page-title{
+        margin-bottom: 1em;
+    }
     .section-content{
         &__left{
             width: 895px;
@@ -2764,10 +2773,34 @@ a.ii-logo{
 }
 
 @media screen and (max-width: 991px){
+    section h2{
+        text-align: center;
+    }
     #side-slogan{
         display: none;
     }
+    a.link-btn{
+        &:hover{
+            span{
+                margin-right: 0;
+            }
+        }
+    }
     .page-template-page-home{
+        .banner{
+            .wrapper{
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, .2);
+                }
+            }
+        }
         .service{
             h3{
                 margin-bottom: 1em;
@@ -2878,6 +2911,15 @@ a.ii-logo{
                 }
             }
         }
+        .about-col__right{
+            a.link-btn{
+                float: none;
+                margin: 10px auto;
+                text-align: center;
+                width: 75px;
+                display: block;
+            }
+        }
     }
     .page-template-page-about{
         .about-top{
@@ -2983,6 +3025,49 @@ a.ii-logo{
             }
         }
     }
+    .page-template-page-home{
+        .service-1, .service-2, .service-3{
+            .service-images{
+                .service-image__left{
+                    display: none;
+                }
+            }
+        }
+        .service-2{
+            .service-images{
+                .service-image__right{
+                    display: flex;
+                    flex-direction: column;
+                    img:first-child{
+                        order: 2;
+                        max-width: 235px;
+                        margin-bottom: 0;
+                    }
+                    img:last-child{
+                        order: 1;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .service-3{
+            .service-images{
+                .service-image__right{
+                    display: flex;
+                    flex-direction: column;
+                    img:first-child{
+                        order: 2;
+                        max-width: 284px;
+                        margin-bottom: 0;
+                    }
+                    img:last-child{
+                        order: 1;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
     .page-template-page-about{
         header{
             margin-bottom: 0;
@@ -3028,6 +3113,8 @@ a.ii-logo{
                 }
             }
             &-bottom{
+                padding-bottom: 250px;
+                background-size: 100% 250px;
                 .container{
                     padding: 0 0 0 30px;
                     overflow-x: hidden;

@@ -17,8 +17,8 @@ get_header();
                             <div class="ii-contacts">
                                 <ul>
                                     <li><strong>Email: </strong><a href="mailto:info@imagineinterior.com.au">info@imagineinterior.com.au</a></li>
-                                    <li><strong>Phone:</strong><a href="tel:+61379916991">+61 3 7991 6991</a></li>
-                                    <li><strong>Address:</strong><span>Unit 8, 888 XXXX Road<br> SURBURB NAME, VIC 3000</span></li>
+                                    <li><strong>Phone:</strong><a href="tel:+61411380961">+61 411380961</a></li>
+                                    <li><strong>Address:</strong><span>51 Boundary Street<br> Port Melbourne, VIC 3207</span></li>
                                 </ul>
                             </div>
                             <div class="slide-in-image">

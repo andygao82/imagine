@@ -59,7 +59,7 @@ get_header();
                 <div class="col-12">
                     <div class="wrapper">
 	                    <?php
-	                    for ($i = 1; $i <= 5; $i++){
+	                    for ($i = 1; $i <= 6; $i++){
 		                    ?>
 		                    <?php if(get_field('project_image_'.$i.'')){?>
                                 <div class="project-image"><img src="<?= get_field('project_image_'.$i.'') ?>" alt="<?= the_title() ?>"> </div>
@@ -70,22 +70,24 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="project-navs">
+    <div class="project-navs" style="display: none">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="wrapper">
                         <div class="project-prev">
-                            <a class="link-btn link-btn-res" href="<?php previous_post_link(); ?>"><img src="<?= get_template_directory_uri('/')?>/images/arrow-res.svg" alt="Imagine Interior"><span>Previous Project</span></a>
 		                    <?php if(previous_post_link()){?>
-                                <a  class="link-btn" href="<?php previous_post_link(); ?>"><span>Previous Project</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                                <a class="link-btn link-btn-res" href="<?php previous_post_link(); ?>"><img src="<?= get_template_directory_uri('/')?>/images/arrow-res.svg" alt="Imagine Interior"><span>Previous Project</span></a>
+
 		                    <?php } ?>
                         </div>
                         <div class="project-next">
-                            <a class="link-btn" href="<?php next_post_link(); ?>"><span>Next Project</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
-		                    <?php if(next_post_link()){?>
-                                <a class="link-btn" href="<?php next_post_link(); ?>"><span>Next Project</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
-		                    <?php } ?>
+	                        <?php if(next_post_link()){?>
+                                <a class="link-btn" href="<?php next_post_link(); ?>">
+                                    <span>Next Project</span>
+                                    <img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior">
+                                </a>
+	                        <?php } ?>
                         </div>
                     </div>
                 </div>

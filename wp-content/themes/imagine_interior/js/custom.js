@@ -56,6 +56,7 @@ jQuery(document).ready(function ($) {
     inView('.about-mid').on('enter', function(){
         $('.about-mid').find('.loading-title').addClass('loaded-title');
         $('.about-mid').find('.slide-in-image').addClass('slided-in-image');
+        $('#side-slogan').addClass('loaded-slogan')
     });
 
     inView('.about-bottom').on('enter', function(){
@@ -71,6 +72,7 @@ jQuery(document).ready(function ($) {
     inView('.service-mid').on('enter', function(){
         $('.service-mid').find('.loading-title').addClass('loaded-title');
         $('.service-mid').find('.slide-in-image').addClass('slided-in-image');
+        $('#side-slogan').addClass('loaded-slogan')
     });
 
     inView('.service-bottom').on('enter', function(){
@@ -91,11 +93,17 @@ jQuery(document).ready(function ($) {
     inView('.contact-bottom').on('enter', function(){
         $('.contact-bottom').find('.loading-title').addClass('loaded-title');
         $('.contact-bottom').find('.slide-in-image').addClass('slided-in-image');
+        $('#side-slogan').addClass('loaded-slogan')
     });
 
     inView('.page-banner').on('enter', function(){
         $('.page-banner').find('.loading-title').addClass('loaded-title');
+
+        $('#side-slogan').addClass('loaded-slogan')
+
     });
+
+
 
 });
 

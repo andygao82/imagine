@@ -125,36 +125,31 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
-                <div class="wrapper">
-                    <div class="inner-wrapper">
-                        <h3>Hawthorn</h3>
-                        <div class="featured-content">
-                            <?= get_field('section_3_hawthorn_content') ?>
+
+	        <?php
+	        $args = array(
+		        'post_type'=> 'post',
+		        'orderby'    => 'ID',
+		        'post_status' => 'publish',
+		        'order'    => 'DESC',
+		        'posts_per_page' => 3
+	        );
+	        $result = new WP_Query( $args );
+	        if ( $result-> have_posts() ) : ?>
+		        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+			        <?php $projectBg = get_field('project_banner_image') ?>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
+                        <div class="wrapper">
+                            <a class="inner-wrapper" href="<?php echo get_permalink()?>">
+                                <h3><?php echo get_the_category()[0]->name; ?></h3>
+                                <div class="featured-content">
+	                                <?php echo substr(get_field('project_description'), 0, 55)?>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
-                <div class="wrapper">
-                    <div class="inner-wrapper">
-                        <h3>Albert Park</h3>
-                        <div class="featured-content">
-		                    <?= get_field('section_3_albert_park_content') ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
-                <div class="wrapper">
-                    <div class="inner-wrapper">
-                        <h3>Hawthorn</h3>
-                        <div class="featured-content">
-		                    <?= get_field('section_3_st_kilda_content') ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
+		        <?php endwhile; ?>
+	        <?php endif; wp_reset_postdata(); ?>
         </div>
     </div>
 </section>

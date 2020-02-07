@@ -865,6 +865,7 @@ a.ii-logo{
                 background-position: center center;
                 .inner-wrapper{
                     position: absolute;
+                    color: #ffffff;
                     width: 100%;
                     height: 100%;
                     background-color: rgba(199,159,98,0);
@@ -1303,7 +1304,13 @@ a.ii-logo{
         background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 56%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 100%);
     }
     #side-slogan{
-        top: 40px;
+        top: 140px;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+        &.loaded-slogan{
+            top: 40px;
+            opacity: 1;
+        }
         &::after{
             width: 195px;
             margin-left: 50px;
@@ -1412,11 +1419,9 @@ a.ii-logo{
                 margin-right: 0;
                 top: -40px;
                 @media screen and (max-width: 1700px){
-                    top: -15px;
-                }
-                @media screen and (max-width: 1500px){
                     top: -14px;
                 }
+
             }
         }
     }
@@ -1467,7 +1472,13 @@ a.ii-logo{
         background: linear-gradient(180deg, rgba(245,246,247,1) 0%, rgba(245,246,247,1) 50.5%, rgba(255,255,255,1) 50.5%, rgba(255,255,255,1) 100%);
     }
     #side-slogan{
-        top: 60px;
+        top: 160px;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+        &.loaded-slogan{
+            top: 60px;
+            opacity: 1;
+        }
         &::after{
             width: 150px;
             margin-left: 50px;
@@ -1756,8 +1767,14 @@ a.ii-logo{
             }
         }
         #side-slogan{
-            top: 360px;
+            top: 500px;
             left: 110px;
+            opacity: 0;
+            transition: all 1.5s ease-in-out;
+            &.loaded-slogan{
+                top: 360px;
+                opacity: 1;
+            }
             &:after{
                 width: 180px;
             }
@@ -1850,7 +1867,14 @@ a.ii-logo{
     #side-slogan{
         white-space: nowrap;
         left: 100%;
-        top: 250px;
+        top: 350px;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+        transition-delay: 2s;
+        &.loaded-slogan{
+            top: 250px;
+            opacity: 1;
+        }
     }
     .page-banner{
         .wrapper{
@@ -2066,6 +2090,7 @@ a.ii-logo{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
     &-intro{
         margin-top: -143px;
@@ -3026,9 +3051,26 @@ a.ii-logo{
         }
     }
     .page-template-page-home{
+        .banner{
+            #mobile-banner-slider{
+                .slides{
+                    li{
+                        background-size: cover !important;
+                        background-position: center center;
+                    }
+                }
+            }
+        }
         .service-1, .service-2, .service-3{
             .service-images{
                 .service-image__left{
+                    display: none;
+                }
+            }
+        }
+        .service-1{
+            .service-image__right{
+                img:last-child{
                     display: none;
                 }
             }
@@ -3039,9 +3081,7 @@ a.ii-logo{
                     display: flex;
                     flex-direction: column;
                     img:first-child{
-                        order: 2;
-                        max-width: 235px;
-                        margin-bottom: 0;
+                        display: none;
                     }
                     img:last-child{
                         order: 1;
@@ -3056,9 +3096,7 @@ a.ii-logo{
                     display: flex;
                     flex-direction: column;
                     img:first-child{
-                        order: 2;
-                        max-width: 284px;
-                        margin-bottom: 0;
+                        display: none;
                     }
                     img:last-child{
                         order: 1;

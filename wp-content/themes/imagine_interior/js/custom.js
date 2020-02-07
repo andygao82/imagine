@@ -7,7 +7,8 @@ jQuery(document).ready(function ($) {
    });
 
     $('#mobile-banner-slider').flexslider({
-        animation: "fade"
+        animation: "fade",
+        touch: true
     });
 
    $('.menu-icon').on('click', function (e) {

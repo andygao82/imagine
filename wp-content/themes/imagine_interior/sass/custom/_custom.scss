@@ -3039,7 +3039,6 @@ a.ii-logo{
         }
     }
 }
-
 @media screen and (max-width: 576px){
     .main-navigation{
         ul{
@@ -3056,7 +3055,7 @@ a.ii-logo{
                 .slides{
                     li{
                         background-size: cover !important;
-                        background-position: center center;
+                        background-position: center center !important;
                     }
                 }
             }

@@ -107,7 +107,7 @@ get_header();
                         </div>
                     </div>
                     <div class="about-col__right">
-                        <h2 class="loading-title"><span>About Us +</span></h2>
+                        <h2 class="loading-title"><span>ABOUT US +</span></h2>
                         <div class="section-description">
 		                    <?= get_field('section_2_content')?>
                         </div>
@@ -159,7 +159,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="loading-title"><span>Our Service +</span></h2>
+                <h2 class="loading-title"><span>OUR SERVICE +</span></h2>
                 <span id="side-slogan">Imagine Interior / Decor Your Home / Design Your Dream</span>
             </div>
         </div>

@@ -31,7 +31,7 @@ get_header();
                         </div>
                     </div>
                     <div class="service-mid__content">
-                        <h2 class="loading-title"><span class="trans-span">"THE HOME"</span> <span>- Six Weeks</span></h2>
+                        <h2 class="loading-title"><span class="trans-span">"THE HOME STAGING"</span> <span>- 6 Weeks + 2 weeks</span></h2>
                         <div class="section-description"><?= get_field('the_home_content')?></div>
                     </div>
                 </div>

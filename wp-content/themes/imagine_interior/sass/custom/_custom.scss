@@ -627,7 +627,6 @@ a.ii-logo{
     .banner{
         .wrapper{
             margin-top: 200px;
-            margin-bottom: 24px;
             @media screen and (max-width: 1700px){
                 margin-top: 166px;
                 margin-bottom: 20px;
@@ -1519,9 +1518,11 @@ a.ii-logo{
             span{
                 display: block;
                 text-transform: capitalize;
+                white-space: nowrap;
                 &.trans-span{
                     text-transform: uppercase;
                     transform: translateX(-24%);
+                    white-space: nowrap;
                 }
             }
             margin-top: 30%;
@@ -1793,14 +1794,14 @@ a.ii-logo{
                 width: 48%;
                 float: left;
                 margin-bottom: 1em;
-                &:nth-child(2n){
+                &:nth-child(odd){
                     float: right;
                 }
-                &-beds{
+                &-hl{
                     width: 48%;
                     float: left;
                 }
-                &-livings{
+                &-hr{
                     width: 48%;
                     float: right;
                 }
@@ -1808,9 +1809,21 @@ a.ii-logo{
                     font-weight: 700;
                     margin-bottom: .8em;
                 }
+                select{
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 1px solid $color__gold;
+                    color: #CFD3D7;
+                    font-style: italic;
+                    font-size: 1.6rem;
+                    padding: 3px;
+                    border-radius: 3px;
+                    height: 32px;
+                }
                 input{
                     width: 100%;
                     border: 0;
+                    height: 32px;
                     border-bottom: 1px solid $color__gold;
                     color: $color__grey;
                     font-size: 1.6rem;
@@ -1829,6 +1842,9 @@ a.ii-logo{
                     color: #CFD3D7;
                     font-style: italic;
                 }
+            }
+            .submit-btn{
+                clear: both;
             }
             button{
                 width: 165px;

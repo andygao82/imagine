@@ -11,7 +11,7 @@ get_header();
                 <div class="wrapper">
                     <h1 class="page-title section-title loading-title"><span>DÉCOR YOUR HOME </span><span>DESIGN YOUR DREAM</span></h1>
                     <div class="section-content"><?= get_field('section_1_content')?></div>
-                    <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                    <a href="/about-us" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     <ul class="social-media">
                         <li><a href="#" class="social-media__instagram" target="_blank"><?php echo file_get_contents($img_path."/images/instagram-icon.svg"); ?></a></li>
                         <li><a href="#" class="social-media__linkedin" target="_blank"><?php echo file_get_contents($img_path."/images/linkedin-icon.svg"); ?></a></li>
@@ -21,10 +21,11 @@ get_header();
                 <div class="home-slider">
                     <div class="home-slider-wrapper" id="home-banner-slider">
                         <ul class="slider">
-                            <li><img src="<?= $img_path?>/images/slide_img_1.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_2.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_3.jpg" alt="Imagine Interior"></li>
-                            <li><img src="<?= $img_path?>/images/slide_img_4.jpg" alt="Imagine Interior"></li>
+
+                            <li><img src="<?php echo get_field('slider_image_1')?>" alt="Imagine Interior"></li>
+                            <li><img src="<?php echo get_field('slider_image_2')?>" alt="Imagine Interior"></li>
+                            <li><img src="<?php echo get_field('slider_image_3')?>" alt="Imagine Interior"></li>
+                            <li><img src="<?php echo get_field('slider_image_4')?>" alt="Imagine Interior"></li>
                         </ul>
                     </div>
                     <div class="home-slider-nav">
@@ -39,10 +40,10 @@ get_header();
                 <div class="mobile-slider">
                     <div class="mobile-slider-wrapper flexslider" id="mobile-banner-slider">
                         <ul class="slides">
-                            <li style="background: url(<?= $img_path?>/images/slide_img_1.jpg)"></li>
-                            <li style="background: url(<?= $img_path?>/images/slide_img_2.jpg)"></li>
-                            <li style="background: url(<?= $img_path?>/images/slide_img_3.jpg)"></li>
-                            <li style="background: url(<?= $img_path?>/images/slide_img_4.jpg)"></li>
+                            <li style="background: url(<?php echo get_field('slider_image_1')?>)"></li>
+                            <li style="background: url(<?php echo get_field('slider_image_2')?>)"></li>
+                            <li style="background: url(<?php echo get_field('slider_image_3')?>)"></li>
+                            <li style="background: url(<?php echo get_field('slider_image_4')?>)"></li>
                         </ul>
                     </div>
                 </div>

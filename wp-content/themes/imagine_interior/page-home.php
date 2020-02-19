@@ -11,7 +11,7 @@ get_header();
                 <div class="wrapper">
                     <h1 class="page-title section-title loading-title"><span>DÉCOR YOUR HOME </span><span>DESIGN YOUR DREAM</span></h1>
                     <div class="section-content"><?= get_field('section_1_content')?></div>
-                    <a href="/about-us" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>about-us" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     <ul class="social-media">
                         <li><a href="#" class="social-media__instagram" target="_blank"><?php echo file_get_contents($img_path."/images/instagram-icon.svg"); ?></a></li>
                         <li><a href="#" class="social-media__linkedin" target="_blank"><?php echo file_get_contents($img_path."/images/linkedin-icon.svg"); ?></a></li>
@@ -111,7 +111,7 @@ get_header();
                         <div class="section-description">
 		                    <?= get_field('section_2_content')?>
                         </div>
-                        <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>about-us" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@ get_header();
                         <div class="section-content">
 		                    <?= get_field('section_4_content_1') ?>
                         </div>
-                        <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>our-service" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@ get_header();
                         <div class="section-content">
                             <?= get_field('section_4_content_2') ?>
                         </div>
-                        <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>our-service" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
 
                     </div>
                 </div>
@@ -234,7 +234,7 @@ get_header();
 		                    <?= get_field('section_4_content_3') ?>
 
                         </div>
-                        <a href="#" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>our-service" class="link-btn"><span>Learn More</span><img src="<?= get_template_directory_uri('/')?>/images/arrow.svg" alt="Imagine Interior"></a>
 
                     </div>
                 </div>

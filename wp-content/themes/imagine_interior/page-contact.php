@@ -22,12 +22,12 @@ get_header();
                                 </ul>
                             </div>
                             <div class="slide-in-image">
-                                <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_1.jpg" alt="Imagine Interior">
+                                <img src="<?= get_field('get_in_touch_image_1')?>" alt="Imagine Interior">
                             </div>
                         </div>
                         <div class="section-content__right">
                             <div class="slide-in-image">
-                                <img src="<?= get_template_directory_uri('/')?>/images/ContactPageImage_2.jpg" alt="Imagine Interior">
+                                <img src="<?= get_field('get_in_touch_image_2')?>" alt="Imagine Interior">
                             </div>
                         </div>
                     </div>

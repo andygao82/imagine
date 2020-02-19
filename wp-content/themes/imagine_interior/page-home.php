@@ -98,12 +98,12 @@ get_header();
                     <div class="about-col__left">
                         <h3 class="loading-title"><span>PROPERTY STYLING</span><span>& INTERIOR DESIGN</span></h3>
                         <div class="slide-in-image">
-                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-1.jpg" alt="Imagine Interior">
+                            <img src="<?= get_field('section_2_image_1')?>" alt="Imagine Interior">
                         </div>
                     </div>
                     <div class="about-col__mid">
                         <div class="slide-in-image">
-                            <img src="<?= get_template_directory_uri('/')?>/images/section-image-2.jpg" alt="Imagine Interior">
+                            <img src="<?= get_field('section_2_image_2')?>" alt="Imagine Interior">
                         </div>
                     </div>
                     <div class="about-col__right">
@@ -140,7 +140,8 @@ get_header();
 		        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
 			        <?php $projectBg = get_field('project_banner_image') ?>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 featured-col">
-                        <div class="wrapper">
+                        <?php $projectBg = get_field('project_banner_image') ?>
+                        <div class="wrapper" style="background-image: url('<?= $projectBg ?>')">
                             <a class="inner-wrapper" href="<?php echo get_permalink()?>">
                                 <h3><?php echo get_the_category()[0]->name; ?></h3>
                                 <div class="featured-content">
@@ -181,11 +182,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_1.png" alt="Imagine Interior" class="delay1">
+                        <img src="<?= get_field('section_4_image_1')?>" alt="Imagine Interior" class="delay1">
                     </div>
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_2.png" alt="Imagine Interior" class="delay2">
-                        <img src="<?= $img_path?>/images/service_3.png" alt="Imagine Interior" class="delay3">
+                        <img src="<?= get_field('section_4_image_2')?>" alt="Imagine Interior" class="delay2">
+                        <img src="<?= get_field('section_4_image_3')?>" alt="Imagine Interior" class="delay3">
                     </div>
                 </div>
             </div>
@@ -210,11 +211,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="service-images">
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_4.png" alt="Imagine Interior" class="delay1">
+                        <img src="<?= get_field('section_4_image_4')?>" alt="Imagine Interior" class="delay1">
                     </div>
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_5.png" alt="Imagine Interior" class="delay2">
-                        <img src="<?= $img_path?>/images/service_6.png" alt="Imagine Interior" class="delay3">
+                        <img src="<?= get_field('section_4_image_5')?>" alt="Imagine Interior" class="delay2">
+                        <img src="<?= get_field('section_4_image_6')?>" alt="Imagine Interior" class="delay3">
                     </div>
                 </div>
             </div>
@@ -241,11 +242,11 @@ get_header();
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="service-images">
                     <div class="service-image__right">
-                        <img src="<?= $img_path?>/images/service_7.png" alt="Imagine Interior" class="delay1">
-                        <img src="<?= $img_path?>/images/service_9.png" alt="Imagine Interior" class="delay2">
+                        <img src="<?= get_field('section_4_image_7')?>" alt="Imagine Interior" class="delay1">
+                        <img src="<?= get_field('section_4_image_9')?>" alt="Imagine Interior" class="delay2">
                     </div>
                     <div class="service-image__left">
-                        <img src="<?= $img_path?>/images/service_8.png" alt="Imagine Interior" class="delay3">
+                        <img src="<?= get_field('section_4_image_8')?>" alt="Imagine Interior" class="delay3">
                     </div>
 
                 </div>

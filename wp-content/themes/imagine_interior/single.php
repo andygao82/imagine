@@ -56,16 +56,21 @@ get_header();
     <div class="project-gallery">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="wrapper">
+
+
 	                    <?php
 	                    for ($i = 1; $i <= 6; $i++){
 		                    ?>
 		                    <?php if(get_field('project_image_'.$i.'')){?>
-                                <div class="project-image"><img src="<?= get_field('project_image_'.$i.'') ?>" alt="<?= the_title() ?>"> </div>
-		                    <?php }}?>
+                <div class="col-12 col-sm-6">
+                    <div class="wrapper">
+                        <div class="project-image"><img src="<?= get_field('project_image_'.$i.'') ?>" alt="<?= the_title() ?>"> </div>
+
                     </div>
                 </div>
+		                    <?php }}?>
+
+
 
             </div>
         </div>

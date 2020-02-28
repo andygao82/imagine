@@ -130,7 +130,7 @@ get_header();
 	        <?php
 	        $args = array(
 		        'post_type'=> 'post',
-		        'orderby'    => 'ID',
+		        'orderby'    => 'menu_order',
 		        'post_status' => 'publish',
 		        'order'    => 'DESC',
 		        'posts_per_page' => 3
@@ -145,7 +145,7 @@ get_header();
                             <a class="inner-wrapper" href="<?php echo get_permalink()?>">
                                 <h3><?php echo get_the_category()[0]->name; ?></h3>
                                 <div class="featured-content">
-	                                <?php echo substr(get_field('project_description'), 0, 55)?>
+	                                <?php echo get_field('project_description')?>
                                 </div>
                             </a>
                         </div>

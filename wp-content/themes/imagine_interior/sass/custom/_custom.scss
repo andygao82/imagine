@@ -1228,7 +1228,7 @@ a.ii-logo{
     }
     h2{
         font-size: 5rem;
-        letter-spacing: 4.5px;
+        letter-spacing: 3px;
         line-height: 1.4;
         font-family: 'Futura PT';
         font-weight: 300;
@@ -1245,7 +1245,6 @@ a.ii-logo{
         &::after{
             display: none;
         }
-
     }
     .section-description{
         font-size: 1.8rem;
@@ -1262,7 +1261,6 @@ a.ii-logo{
         }
     }
 }
-
 .about-top{
     position: relative;
     h1.page-title{
@@ -1506,9 +1504,9 @@ a.ii-logo{
     &__content{
         float: right;
         width: 100%;
-        max-width: 565px;
+        max-width: 585px;
         @media screen and (max-width: 1700px){
-            max-width: 475px;
+            max-width: 480px;
         }
         @media screen and (max-width: 1500px){
             max-width: 425px;

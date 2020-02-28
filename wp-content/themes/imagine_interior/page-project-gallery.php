@@ -41,7 +41,7 @@ get_header();
         <?php
             $args = array(
                 'post_type'=> 'post',
-                'orderby'    => 'ID',
+                'orderby'    => 'menu_order',
                 'post_status' => 'publish',
                 'order'    => 'DESC',
                 'posts_per_page' => -1
@@ -55,7 +55,7 @@ get_header();
                                 <a class="inner-wrapper" href="<?php echo get_permalink()?>">
                                     <h3><?php echo get_the_category()[0]->name; ?></h3>
                                     <div class="project-brief">
-		                                <?php echo substr(get_field('project_description'), 0, 60)?>
+		                                <?php echo get_field('project_description')?>
                                     </div>
                                 </a>
                             </div>
